@@ -1,0 +1,42 @@
+<MyRoot>
+    ip_text : ip_text
+    
+    GridLayout :
+        id : connection_grid
+        rows : 1
+        cols : 2
+        padding : 10
+        spacing : 10
+        height : 125
+        
+        TextInput:
+            id : output
+            hint_text : "msg"
+            size_hint : (1, None)
+            height : 450
+            readonly : True
+            font_size : 45
+            multiline : True
+            disabled : True
+
+        BoxLayout:
+            orientation : 'vertical'
+            Label:
+                id : label
+                text : "server IP"
+            TextInput:
+                id : ip_text
+                height : 450
+                multiline : True
+                font_size : 42
+                disable : True
+                readonly : False
+                on_text : app.start()
+      
+
+       # orientation : 'vertical'
+        
+
+
+        
+
