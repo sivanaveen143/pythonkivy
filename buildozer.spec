@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = test6
 
 # (str) Package name
-package.name = myapp
+package.name = test6
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = org.kivy
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy
+requirements = python3,kivy==2.1.0,kivymd,android,pyjnius,pillow,pandas
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -53,7 +53,7 @@ requirements = python3,kivy
 orientation = portrait
 
 # (list) List of service to declare
-#services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
+services = Myservice:service.py
 
 #
 # OSX Specific
@@ -93,7 +93,7 @@ fullscreen = 0
 #icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
 
 # (list) Permissions
-#android.permissions = INTERNET
+android.permissions = INTERNET
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
